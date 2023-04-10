@@ -1,0 +1,51 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림";   /* 글꼴 */
+}
+
+header {
+    background-color: rgb(173, 167, 254);   /* 배경 색 */
+    width: 80%;         /* 사이즈 */
+    margin-left: auto;      /*왼쪽 여백 사이즈 자동*/
+    margin-right: auto;     /*오른쪽 여백 사이즈 자동*/
+    /* padding: 10px; */        /* 위 아래 옆 여백 사이즈 */
+    /* padding-left: 30px; */      /* 왼쪽 여백 사이즈 */
+    /* padding-right: 30px; */     /* 오른쪽 여백 사이즈 */
+    /* padding-top: 10px; */       /* 위 여백 사이즈 */
+    /* padding-bottom: 20px; */    /* 아래 여백 사이즈 */
+    padding: 10px 10px 50px 100px; /*위 오른 아래 왼 순서대로 적용*/
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2em;
+    /* background-color: rgb(207, 143, 247); */
+}
+
+/* header 의 자손인 h1 태그에 적용 */
+header h1 {
+    color: white;
+    width: 40%;
+    float: left;
+}
+/* header 의 자식인 nav 태그에 적용 */
+header > nav {
+    /* background-color: rgb(156, 255, 255); */
+    width: 50%;     /* 상자 크기 */
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;  /*ul 의 점을 설정*/
+
+}
+
+nav ul li {
+    /* background-color: rgb(253, 251, 224); li의 색 정하기 */
+    display:  inline;   /* 라인 가로로*/
+    float: left;
+    margin: 15px; /*여백 사이즈*/
+}
+a { /* nav a or     nav ul li a */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
