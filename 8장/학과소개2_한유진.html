@@ -7,6 +7,36 @@
     <title>컴퓨터공학부 - 한유진</title>
 
     <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <style>
+        article {
+            /* background-color: rgb(202, 202, 255); 글자 전체 영역 색상 */
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 20px 0px 20px 0px;
+            padding: 20px;
+        }
+
+        #com1 {
+            border: 2px solid black; /* 테두리 직선 */
+            border-radius: 10px
+        }
+        #com2 {
+            border: 5px dotted green; /* 테두리 도트 선 */
+            border-radius: 20px; /* 테두리 둥근 모양 */
+        }
+        #com3 {
+            border: 10px double orange; /* 테두리 이중 선 */
+            border-top-left-radius: 30px; /* 테두리 위쪽 왼쪽 대각선 둥글게 */
+            border-bottom-right-radius: 30px; /* 테두리 밑쪽 오른쪽 대각선 둥글게 */
+        }
+
+        .red_point {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
      <!-- 로그, 메뉴 영역 -->
@@ -15,10 +45,10 @@
         <!-- 메뉴 -->
         <nav>
             <ul>
-                <li><a href="">학부 2소개</a></li>
-                <li><a href="">컴퓨터공학전공</a></li>
-                <li><a href="">메타버스전공</a></li>
-                <li><a href="">교육 목표</a></li>
+                <li><a href="#com1">학부 소개</a></li>
+                <li><a href="#com2">컴퓨터공학전공</a></li>
+                <li><a href="#com3">메타버스전공</a></li>
+                <li><a href="#com4">교육 목표</a></li>
             </ul>
         </nav>
      </header>
@@ -26,7 +56,7 @@
      <!-- 학부 소개 메인 영역 -->
      <section>
         <!-- 학부소개 콘텐츠 영역 -->
-        <article>
+        <article id="com1">
             <h2>학부소개</h2>
             <p>
                 본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
@@ -40,7 +70,7 @@
         </article>
         
         <!-- 컴퓨터공학전공 소개 콘텐츠 영역 -->
-        <article>
+        <article id="com2">
             <h2>컴퓨터공학전공</h2>
             <h3>소개</h3>
             <p>
@@ -59,7 +89,7 @@
         </article>
         
         <!-- 메타버스전공 소개 콘텐츠 영역 -->
-        <article>
+        <article id="com3">
             <h2>메타버스전공</h2>
             <h3>소개</h3>
                 <p>
@@ -77,7 +107,7 @@
         </article>
         
         <!-- 교육 목표 콘텐츠 영역 -->    
-        <article>
+        <article id="com4">
             <h2>교육 목표</h2>
             <p>
                 <ul>
