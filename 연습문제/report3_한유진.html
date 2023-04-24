@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>연습문제 2번 - 한유진</title>
+        <style>
+            hr, h1, p {
+                margin: 0px 50px 0px 50px;
+            }
+            
+            
+            legend {
+                font-weight: bold; /* 굵은 글자 */
+				font-size: 18px;   /* 글자 크기 18px */
+            }
+            
+            ul input {
+                font-weight: bold; /* 굵은 글자 */
+            }
+
+            label { 
+                font-weight: bold;  /* 굵은 글자 */
+                width: 60px;  /* 너비 80px */
+                margin-left: 50px;
+            }
+
+            form {
+                margin-left: 50px;
+            }
+            
+            label input {
+                border: 10px dotted rgb(131, 131, 131);
+            }
+            
+        </style>
+    </head>
+
+
+    <body>
+        <h1>프런트엔드 개발자 지원서</h1><br>
+        <p>HTML. CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p><br>
+        <hr>
+        <br>
+        
+        <form name="myForm" method="get" action="result.html">
+            <legend>개인 정보</legend>
+            <br>
+                <label for="" class="title">이름</label> 
+                <input type="text" name="user_name" id="user_name" placeholder="여백없이 입력" autofocus required><br>
+                <label for="" class="title">연락처</label>
+                <input type="tel" name="user_pwd" id="user_pwd" max="11">
+                <br><br>
+            
+            <legend>지원 분야</legend>
+            <ul>
+                <input type="radio" name="field" id="wab1" value="웹 퍼블리싱">웹 퍼블리싱
+                <br>
+                <input type="radio" name="field" id="wab2" value="웹 애플리케이션 개발">웹 애플리케이션 개발
+                <br>
+                <input type="radio" name="field" id="wab3" value="개발 환경 개선">개발 환경 개선
+                <br><br>
+            </ul>
+            <legend>지원 동기</legend>
+            <br>
+            <textarea name="user_info" id="user_info" cols="50" rows="10" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+            <br>
+            <input type="submit" value="점수하기">
+            <input type="reset" value="다시 쓰기">
+        </form>
+    </body>
+</html>
