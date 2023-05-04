@@ -1,3 +1,58 @@
-body {
-    background-color: rgb(255, 255, 255);
+header{
+    /*width: 80%;
+    height: 225px;
+    margin-right: auto;     /*왼쪽 바깥에 틈을 만들어 가운데정렬 글자는text-align: center;로*/
+    /*margin-left: auto;    /*오른쪽 바깥에 틈을 만들어 가운데정렬*/
+    /*padding: 10px;        /*박스테두리 기준 콘텐츠 모든간격 10px */
+    /*padding-left: 30px;   /*왼쪽 간격*/
+    /*padding-top: 10px;    /*윗간격*/
+    /*padding-bottom: 20px; /*아랫간격*/
+    /*padding: 10px 20px 50px 60px;     /*탑을기준으로 시계방향으로 간격주기 위 오른 아래 왼*/
+    overflow: hidden;       /*삐져나온애들 만큼 영역지정*/
+}
+
+h1 {
+    /* background-color: brown; */
+    font-size: 2em;
+    text-align: center;
+}
+/*header의 자손인 h1 태그에 적용*/
+header img {
+    float: left;
+}
+header h1 {
+    color: black;
+    font-size: 35px;
+}
+header p {
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+nav {       /*자식관계 "부모태그>자식태그" '>'로*/
+    color:white;    /*글자색*/ 
+    background-color:rgb(125, 131, 147); 
+    height: 45px;
+    width: 100%;
+    padding-top: 15px;
+    /* float: right;    박스에서 빠져 나와 오른쪽으로 삐진다*/
+}
+
+a { /*nav a 아님 nav ul li a 로 해도 됨*/
+    display: inline;        /*블록요소가 아닌 인라인 요소 표시*/
+    text-decoration: none;      /*하이퍼링크 밑줄 제거*/  
+    color:rgb(255, 255, 255);   /*글자색*/ 
+    width: 100px;
+    margin: 30px;
+}
+
+footer {
+    background-color: #b9b9b9;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;     /*바깥에 틈을 만들어 가운데정렬*/
+    font-size: 20px;
+    height: 75px;
+    padding-top: 5px;
+    margin: 0px;
 }

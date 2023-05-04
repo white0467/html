@@ -4,48 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한유진</title>
+    <title>202395034 한유진</title>
     <link rel="stylesheet" type="text/css" href="202395034.css">
+    <style>
+        section {
+            padding: 5px;
+        }
+
+        article{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto; /*바깥에 틈을 만들어 가운데 정렬*/
+            box-shadow: 5px 5px 5px 0px gray;
+        }
+
+        h2{
+            margin: 30px 10px 10px 10px;
+            font-size: 1.8em;   /*글자크기 1.8em*/
+            padding: 20px;  /*안쪽여백 15px*/
+            box-shadow: -10px 2px 0px 0px rgb(172, 135, 235);   /*왼쪽으로 5px 아랫쪽으로 2px위치에서 시작해서 0px만큼 번지고 0px 만큼 흐리게 영역 그림자 주기*/
+        }
+
+        h3{
+            font-size: 1.5em;   /*글자크기 1.8em*/
+            padding: 15px;  /*안쪽여백 15px*/
+        }
+
+        #com1 h3{
+            border-left: 5px solid rgb(91, 173, 255);
+            background-color: rgb(168, 191, 255);
+        }
+        
+        #com2 h3{
+            border-left: 5px solid rgb(255, 41, 41);
+            background-color: rgb(255, 131, 131);
+        }
+
+        h4{
+            font-size: 1.1em;   /*글자크기 1.8em*/
+        }
+
+        article p{
+            padding-left: 20px; /*왼쪽 안쪽 여백 30px*/
+        }
+
+        dl{
+            line-height: 30px;  /*줄간격 30px*/
+            padding-left: 30px; /*왼쪽 안쪽 여백 30px*/
+            margin-right: 30px; /*오른쪽 바깥 여백 30px*/
+        }
+        dt{
+            font-size: 1.1em;
+            font-weight: bold;
+            color: rgb(219, 110, 255);
+        }
+
+    </style>
 </head>
 <body>
+    <!--로고, 메뉴 영역-->
     <header>
-        <div> <!-- 이미지 영역 -->
-            <img src="images/main.jpg">
+        <!--이미지영역-->
+        <div>
+            <img src="images/main.jpg" alt="학과소개이미지">
         </div>
-        <div> <!-- 제목 영역 -->
+        <!--제목영역-->
+        <div>
             <h1>지금도 그렇고 미래도 소프트웨어 세상입니다!</h1>
-            <p>4차 산업혁명을 선도할 개발 인채를 양성합니다.</p>
-        </div>
+            <p><b>4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성합니다.</b></p>
+        </div>  
     </header>
-
+    <!-- 메뉴 -->
     <nav>
-        <a href="introduction.html">학과 소개 | </a>
-        <a href="history.html">학과 연혁 | </a>
+        <!--href에 주소로 #(id)를 하면 그 영역으로 화면이 이동된다.-->
+        <a href="Introduction.html">학과 소개</a> |
+        <a href="history.html">학과 연혁</a> |
         <a href="join.html">회원가입</a>
     </nav>
-
+    <!--학부 소개 메인 영역-->
     <section>
+        <!--학부 소개 콘텐츠 내용 영역-->
         <h2>학과 소개</h2>
-        <article id="com3">
-            <h3>메타버스전공</h3>
+        
+        <!--컴퓨터공학전공 소개 콘텐츠 내용 영역-->
+        <article id="com1">
+            <h3>컴퓨터공학전공</h3>
             <h4>소개</h4>
-                <p>
-                    프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해 
-                    <span class="red_point">메타버스</span> 및 <span class="red_point">게임</span> 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을 
-                    겸비한 창의적인 인력을 양성하는 전공
-                </p>
+            <p>
+                컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고,
+                <span class="red_point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해
+                취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공	
+            </p>
             <h4>교육과정</h4>
             <dl>
                 <dt>1학년 1학기 ~ 2학년 2학기 (4개 학기)</dt>
                 <dd>컴퓨터구조, 자료구조, 컴퓨터통신, 운영체제 등의 컴퓨터공학의 기초 과목과 Python, C, C++, C#, Java 등 실무에서 요구되는 프로그래밍 언어를 실습 중심으로 학습하면서 프로그램 코딩 역량을 배양합니다.</dd>
-
                 <dt>3학년 1학기 ~ 4학년 2학기 (4개 학기)</dt>
+                <dd>현장 밀착형 실무 기술과 고급 IT 기술을 소프트웨어엔지니어링, IoT 프로그래밍, 클라우드시스템 이해, 인공지능 등 전공심화 교과목을 통해 학습하고, 캡스톤디자인 교과목을 통해 실무 프로젝트를 수행합니다.</dd>
+            </dl>
+        </article>
+        
+        <!--메타버스전공 소개 콘텐츠 내용 영역-->
+        <article id="com2">
+            <h3>메타버스전공</h3>
+            <h4>소개</h4>
+            <p>
+                프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해 
+                <span class="red_point">메타버스</span> 및 <span class="red_point">게임</span> 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을 
+                겸비한 창의적인 인력을 양성하는 전공
+            </p>
+            <h4>교육과정</h4>
+            <dl>
+                <dt>1학년 1학기 ~ 2학년 2학기 (4개 학기)</dt>
+                <dd>컴퓨터구조, 자료구조, 컴퓨터통신, 운영체제 등의 컴퓨터공학의 기초 과목과 Python, C, C++, C#, Java 등 실무에서 요구되는 프로그래밍 언어를 실습 중심으로 학습하면서 프로그램 코딩 역량을 배양합니다.</dd>
+                <dt>3학년 1학기 ~ 4학년 2학기 (4개 학기)</dt> 
                 <dd>메타버스 플랫폼 구현 및 콘텐츠 제작 기술에 대해 VR엔진프로그래밍, 메타버스플랫폼이해와응용, 메타버스콘텐츠제작, 3D게임프로그래밍, 블록체인 등 전공심화 교과목을 통해 학습하고, 캡스톤디자인 교과목을 통해 실무 프로젝트를 수행합니다.</dd>
+            </dl>
         </article>
     </section>
 
+
+    <!--꼬리말 영역 - 주소 또는 저작권 표시-->
     <footer>
-        <p>컴퓨터공학부 202395034 한유진</p>
+        <p>
+            <b>컴퓨터공학부 202395034 한유진</b>
+        </p>
     </footer>
 </body>
 </body>
