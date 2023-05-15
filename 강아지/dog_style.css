@@ -1,0 +1,92 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림"; /*글꼴이 없으면 순서대로 있는 글꼴로 선정*/
+}
+
+header{
+    background-color: rgb(124, 122, 255);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 80px;
+}
+
+header h1 {
+    float: left;
+    color: white;
+    padding-left: 20px;
+}
+
+header nav {
+    float: right;
+    padding-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none; /*ul의 점 없애기*/
+}
+
+nav li {
+    display: inline;
+    margin: 15px;
+}
+
+article {
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(184, 113, 255);
+    padding: 5px;
+}
+
+section {
+    columns: 3;
+    column-rule: 1px dotted rgb(131, 142, 255);
+    padding: 10px;
+}
+
+section h3 { 
+    break-before: column; /*제목 제일 위로 오게하기*/
+    padding: 15px;
+}
+
+section dt {
+    padding-left: 20px;
+}
+
+section dt,section dd {
+    line-height: 30px;
+}
+
+aside {
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #8497ff;
+}
+
+footer {
+    clear: both;
+}
+
+aside h3 {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #b9b9b9;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
