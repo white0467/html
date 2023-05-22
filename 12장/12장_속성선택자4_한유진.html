@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>속성 선택자3 - 한유진</title>
+    <title>속성 선택자4 - 한유진</title>
 
     <style>
         ul {
@@ -24,24 +24,24 @@
             padding: 5px 20px;
             background-color: yellowgreen;
         }
-
-        .flat {
-            background-color: blue;
-            color: white;
+        
+        a[title |= "us"] { /*us 가 포함된 것*/
+            background: url(image/us.png) no-repeat left center;
+            padding: 5px 25px;
         }
 
-        [class ~= "button"] {
-            border: 2px solid black;
-            box-shadow: rgba(0,0,0,0.4) 5px 5px;
+        a[title |= "jap"] { /*us 가 포함된 것*/
+            background: url(image/jp.png) no-repeat left center;
+            padding: 5px 25px;
         }
     </style>
 </head>
 <body>
     <ul>
-        <li><a href="#">메인 메뉴 1</a></li>
-        <li><a href="#">메인 메뉴 2</a></li>
-        <li><a href="#" class="button">메인 메뉴 3</a></li>
-        <li><a href="#" class="flat button">메인 메뉴 4</a></li>
+        <li>외국어 서비스 : </li>
+        <li><a href="#" title="us">영어</a></li>
+        <li><a href="#" title="us-english">영어</a></li>
+        <li><a href="#" title="jap-anese">일본어</a></li>
     </ul>
 </body>
 </html>

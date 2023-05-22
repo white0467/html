@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>속성 선택자2 - 한유진</title>
+    <title>속성 선택자7 - 한유진</title>
 
     <style>
         ul {
@@ -21,25 +21,23 @@
             color: black;
             font-size: 14px;
             padding: 5px 20px;
-            background-color: yellowgreen;
+            /* background-color: yellow; */
         }
 
-        a[herf] {
-            background-color: rgb(233, 105, 255);
+        a[herf *= "w3"] { /* (*)별은 전체 */
+            background-color: yellow;
         }
 
-        a[target="_blank"] {
-            background: url(image/newwindow.png) no-repeat center right;
-            padding-right: 30px;
-        }
     </style>
 </head>
 <body>
     <h1>HTML5 표준안 사이트</h1>
+    <p>아래 링크 중 노란색 배경의 링크는 w3c 사이트로 연결됩니다.</p>
     <ul>
         <li><a href="http://www.w3c.org/TB/html" target="_blank">HTML</a></li>
-        <li><a href="https://www.w3c.org/TB/Selectors">CSS Selector Level 3</a></li>
-        <li><a href="https://www.w3c.org/TB/css3-mediaqueries">미디어쿼리</a></li>
+        <li><a href="https://www.w3.org/TB/Selectors">CSS Selector Level 3</a></li>
+        <li><a href="https://www.w3.org/TB/css3-mediaqueries">미디어쿼리</a></li>
+        <li><a href="https://computer.silla.ac.kr">컴퓨터공학부</a></li>
     </ul>
 </body>
 </html>

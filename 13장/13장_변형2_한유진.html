@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2 - 한유진</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 200px;
+            border:  1px solid black;
+            margin: 40px;
+            float: left;
+        }
+
+        .scalex:hover {
+            -ms-transform: scalex(1.2);
+            -moz-transform: scalex(1.2);
+            -o-transform: scalex(1.2);
+            -webkit-transform: scalex(1.2);
+            transform: scalex(1.2);
+        }
+
+        .scaley:hover {
+            -ms-transform: scaleY(1.5);
+            -moz-transform: scaleY(1.5);
+            -o-transform: scaleY(1.5);
+            -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+        }
+
+        .scale:hover {
+            -ms-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -o-transform: scale(0.7);
+            -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="scalex">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="scaley">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="scale">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+</body>
+</html>

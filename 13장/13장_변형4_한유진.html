@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 4 - 한유진</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 200px;
+            border:  1px solid black;
+            margin: 40px;
+            float: left;
+            perspective: 200px; /*원근감*/
+            -webkit-perspective: 200px;
+            -ms-perspective: 200px;
+            -moz-perspective: 200px;
+            -o-perspective: 200px;
+        }
+
+        .rotatex:hover {
+            -ms-transform: rotateX(20deg);
+            -moz-transform: rotateX(20deg);
+            -o-transform: rotateX(20deg);
+            -webkit-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+        }
+
+        .rotatey:hover {
+            -ms-transform: rotateY(45deg);
+            -moz-transform: rotateY(45deg);
+            -o-transform: rotateY(45deg);
+            -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);      /*rotate(-40deg)은 로테이트는 돌린다 -는 왼쪽 +는 오른쪽*/
+        }
+
+        .rotatez:hover {
+            -ms-transform: rotateZ(45deg);
+            -moz-transform: rotateZ(45deg);
+            -o-transform: rotateZ(45deg);
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);      /*Z축으로 돌음*/
+        }
+
+        .rotatexyz:hover {
+            -ms-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            -moz-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            -o-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            -webkit-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg);    /*rotate(-40deg)은 로테이트는 돌린다 -는 왼쪽 +는 오른쪽*/
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatey">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatez">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatexyz">
+            <img src="images/fruit.jpg">
+        </div>
+    </div>
+</body>
+</html>
