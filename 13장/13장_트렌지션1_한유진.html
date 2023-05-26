@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌지션1 - 한유진</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 30px;
+        }
+        
+        .bg-tr {
+            background-color: rgb(255, 148, 148);
+            transition: all ease 2s;
+        }
+
+        .bg-tr:hover {      /*마우스로 올리면*/
+            background-color: rgb(110, 78, 255);
+        }
+
+        .border-tr {
+            background-color: aquamarine;
+            border: 3px solid black;
+            transition: all linear 1.5s;
+        }
+
+        .border-tr:hover {
+            border: 3px solid red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-tr"></div>
+    <div class="border-tr"></div>
+</body>
+</html>

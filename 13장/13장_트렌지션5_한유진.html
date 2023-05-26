@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌지션2 - 한유진</title>
+    <style>
+        #ex {
+            width: 500px;
+            height: 150px;
+            margin: 0px auto;
+            padding: 20px;
+            border-radius: 30px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        #ex:hover .box {
+            margin-left:  420px;
+            transform: rotate(720deg)
+        }
+
+        .box {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(152, 207, 255);
+            margin-bottom: 10px;
+        }
+
+        #no-delay {
+            transition-duration: 3s;
+            border: 1px solid rgb(125, 125, 255);
+        }
+
+        #delay {
+            transition-duration: 3s;
+            transition-delay: 1s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="ex">
+        <div class="box" id="no-delay">on-delay</div>
+        <div class="box" id="delay">delay</div>
+    </div>
+</body>
+</html>
