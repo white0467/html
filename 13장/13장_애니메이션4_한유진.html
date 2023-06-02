@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션4 - 한유진</title>
+    <style>
+        #box1 {
+            height: 100px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            animation-name: rotate;
+            animation-duration: 7s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;    /*반복횟수*/
+        }
+
+        @keyframes rotate {
+            from {
+                width: 100PX;
+                background-color: rgb(255, 205, 182);
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+
+            }
+            
+            50% {
+                transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+            }
+            to {
+                width: 100px;
+                background-color: rgb(153, 249, 190);
+                transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+</html>

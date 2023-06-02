@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션3 - 한유진</title>
+    <style>
+        #box1 {
+            height: 60px;
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;    /*반복횟수*/
+        }
+
+        @keyframes moving {
+            from {
+                width: 200px;
+                background-color: rgb(255, 182, 255);
+                transform: scale(0.5) rotate(15deg);
+            }
+
+            to {
+                width: 400px;
+                background-color: magenta;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h3>CSS3 Animation</h3>
+    </div>
+</body>
+</html>
