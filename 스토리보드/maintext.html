@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리들의 마인크래프트 꿀팁</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <style>
+        p {
+            line-height: 1px;
+        }
+
+        li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200px);
+        }
+
+        .caption {
+            position: absolute;
+            top: 200px;
+            width: 300px;
+            height: 200px;
+            padding-top: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+            z-index: 10;
+            color: white;
+            text-align: center;
+        }
+
+
+        a img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 본문 스타일 */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .post h2 {
+            margin-top: 0;
+        }
+
+        .post p {
+            margin-bottom: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="images/rogo.jpeg" width="300">
+        </a>
+        <h1>우리들의 마인크래프트 꿀팁</h1>
+    </header>
+
+      <section id="content">
+        <!-- 여기에 검색 결과를 표시하는 부분을 추가하세요 -->
+      </section>
+      <aside>
+        <div id="namecard">
+            <hr>
+            <h4>블로그정보 | 나의</h4>
+            <img src="images/saitpro.png" width="30">        
+            매니저 : 한유진
+            <br>
+            since 2023.06
+            <hr>
+
+            <hr>
+            <h4>블로그 조회수 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1명</h4>
+            <hr>
+            <p>- 공지사항</p>
+            <p>- 규칙</p>
+            <hr>
+            <div class="sidebar">
+                <h4>커뮤니티</h4>
+                <hr>
+                <ul>
+                    <li><a href="#">마인크래프트란?</a></li>
+                    <li><a href="#">마인크래프트의 역사</a></li>
+                    <li><a href="#">마인크래프트의 활용</a></li>
+                    <li><a href="#">마인크래프트의 콘텐츠</a></li>
+                    <!-- 추가적인 사이드바 항목을 원하는 만큼 추가할 수 있습니다. -->
+                </ul>
+            </div>
+            <hr>
+            <a href="https://www.minecraft.net/ko-kr" target="_blank">공식사이트</a>
+            <hr>
+        </div>
+    </aside>
+
+    <div class="content">
+        <div class="post">
+            <h2>첫 번째 게시물</h2>
+            <p>첫 번째 게시물의 내용입니다.</p>
+        </div>
+
+        <div class="post">
+            <h2>두 번째 게시물</h2>
+            <p>두 번째 게시물의 내용입니다.</p>
+        </div>
+
+        <!-- 추가적인 게시물을 원하는 만큼 추가할 수 있습니다. -->
+    </div>
+</body>
+</html>
